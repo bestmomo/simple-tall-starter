@@ -19,7 +19,7 @@ It uses the TALL stack, which stands for:
 
 ## Installation using Laravel Installer
 
-```laravel new myproject --using=bestmomo/simple-tall-starter```
+```laravel new myproject --using=bestmomo/simple-tall-starter-kit```
 
 Then follow the instructions in the terminal to set up your environment variables and database.
 
