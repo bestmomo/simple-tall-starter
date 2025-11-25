@@ -33,7 +33,9 @@ Then follow the instructions in the terminal to set up your environment variable
 
 This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
+## Screenshots
 
+![Registration Page](screenshots/registration.png)
 
 
 
