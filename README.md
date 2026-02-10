@@ -7,7 +7,6 @@ This Starter kit is based on the official Livewire Starter kit. It contains my s
 It uses the TALL stack, which stands for:
 
 - [Tailwind CSS](https://tailwindcss.com/)
-- [Alpine.js](https://alpinejs.dev/)
 - [Laravel](https://laravel.com/)
 
 ## Features
