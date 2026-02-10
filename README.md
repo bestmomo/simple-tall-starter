@@ -8,6 +8,8 @@ It uses the TALL stack, which stands for:
 
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Laravel](https://laravel.com/)
+- [Alpine.js](https://alpinejs.dev/)
+- [Livewire](https://laravel-livewire.com/)
 
 ## Features
 
