@@ -25,7 +25,7 @@ Then follow the instructions in the terminal to set up your environment variable
 
 ## Installation using Composer
 
-```composer create-project bestmomo/simple-tall-starter-kit myproject```
+```composer create-project bestmomo/simple-tall-starter-kit myproject --stability=dev```
 
 Then follow the instructions in the terminal to set up your environment variables and database.
 
