@@ -11,12 +11,15 @@ class TwoFactorChallengeTest extends TestCase
 {
     use RefreshDatabase;
 
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        $this->skipUnlessFortifyHas(Features::twoFactorAuthentication());
+    }
+
     public function test_two_factor_challenge_redirects_to_login_when_not_authenticated(): void
     {
-        if (! Features::canManageTwoFactorAuthentication()) {
-            $this->markTestSkipped('Two-factor authentication is not enabled.');
-        }
-
         $response = $this->get(route('two-factor.login'));
 
         $response->assertRedirect(route('login'));
@@ -24,16 +27,12 @@ class TwoFactorChallengeTest extends TestCase
 
     public function test_two_factor_challenge_can_be_rendered(): void
     {
-        if (! Features::canManageTwoFactorAuthentication()) {
-            $this->markTestSkipped('Two-factor authentication is not enabled.');
-        }
-
         Features::twoFactorAuthentication([
             'confirm' => true,
             'confirmPassword' => true,
         ]);
 
-        $user = User::factory()->create();
+        $user = User::factory()->withTwoFactor()->create();
 
         $this->post(route('login.store'), [
             'email' => $user->email,

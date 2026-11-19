@@ -1,4 +1,4 @@
-<x-layouts.auth>
+<x-layouts::auth :title="__('Forgot password')">
     <div class="flex flex-col gap-8">
         <div class="text-center">
             <h1 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -38,4 +38,4 @@
             </a>
         </div>
     </div>
-</x-layouts.auth>
+</x-layouts::auth>
